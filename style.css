@@ -1,0 +1,134 @@
+body {
+    background: #a5e1e1;
+    padding: 0;
+    margin: 0;
+}
+
+#game-container {
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    grid-template-columns: repeat(auto-fill, calc(100vw / 40));
+    grid-template-rows: repeat(auto-fill, calc(100% / 25));
+}
+
+.hover:hover {
+    border: 1px solid white;
+}
+
+.sky {
+    background-color: #a5e1e1;
+}
+
+.stone {
+    background-image: url("images/Stone1.jpg");
+    background-size: cover;
+}
+
+.soil {
+    background-image: url("images/soil1.png");
+    background-size: cover;
+}
+
+.grass {
+    background-image: url("images/grass4.png");
+    background-size: cover;
+}
+
+.stem {
+    background-image: url("images/wood1.png");
+
+}
+
+.branches {
+    background-image: url("images/leaves1.png");
+}
+
+#tools-container {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 20vh;
+}
+
+#tools-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tools {
+    display: flex;
+}
+
+#tools img {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#tools img:hover {
+    border: 1px solid white;
+}
+
+#box  {
+    width: 90px;
+    height: 90px;
+}
+
+.inventory {
+    width: 400px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #fcf8f8;
+    position: fixed;
+    left: 5em;
+    bottom: 2em;
+    display: none;
+    padding: 10px;
+}
+
+.item {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 10px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#reset{
+    position: fixed;
+    right: 3em;
+    text-decoration: none;
+    background-color: #767676;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#reset:hover{
+    background-color: red;
+}
+.man{
+    background-image: url(/images/man.png) ;
+    background-size: cover;
+    width: 250px;
+    height: 250px;position: fixed;
+    right: 0;
+    top: 20.5em;
+    animation: move 15s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(180px);
+    }
+    100%{
+        transform: translateX(-1800px);
+
+    }
+}
